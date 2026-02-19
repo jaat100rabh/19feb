@@ -1,0 +1,108 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+  padding: 20px 50px;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e50914;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #f40612;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-user {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-logout-btn {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-logout-btn:hover {
+  background-color: #f40612;
+  transform: translateY(-2px);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+  }
+  
+  .navbar-menu {
+    gap: 15px;
+  }
+  
+  .navbar-user {
+    font-size: 14px;
+  }
+  
+  .navbar-logout-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .navbar-logo {
+    font-size: 20px;
+  }
+  
+  .navbar-menu {
+    gap: 10px;
+  }
+  
+  .navbar-user {
+    font-size: 12px;
+  }
+  
+  .navbar-logout-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

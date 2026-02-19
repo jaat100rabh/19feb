@@ -1,0 +1,300 @@
+/* Movie Details Page Styles */
+.movie-details-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #141414 0%, #1a1a1a 100%);
+}
+
+.movie-details-content {
+  display: flex;
+  padding: 100px 50px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Movie Poster Section */
+.movie-poster-section {
+  flex: 0 0 400px;
+}
+
+.movie-details-poster {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.movie-details-poster:hover {
+  transform: scale(1.02);
+}
+
+/* Movie Info Section */
+.movie-info-section {
+  flex: 1;
+  color: #ffffff;
+}
+
+.movie-header {
+  margin-bottom: 25px;
+}
+
+.movie-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie-meta span {
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.movie-rating {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.imdb-rating {
+  background: #f5c518;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.imdb-votes {
+  color: #999;
+  font-size: 14px;
+}
+
+.movie-genres {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.movie-genres strong {
+  color: #e50914;
+}
+
+.movie-plot {
+  margin-bottom: 30px;
+}
+
+.movie-plot h3 {
+  color: #e50914;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.movie-plot p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.movie-cast {
+  margin-bottom: 30px;
+}
+
+.cast-item {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cast-item strong {
+  color: #e50914;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.movie-additional-info {
+  margin-bottom: 40px;
+}
+
+.info-item {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.info-item strong {
+  color: #e50914;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.movie-actions {
+  margin-top: 40px;
+}
+
+/* Responsive Movie Details */
+@media (max-width: 1024px) {
+  .movie-details-content {
+    flex-direction: column;
+    padding: 80px 30px 30px;
+    gap: 30px;
+  }
+  
+  .movie-poster-section {
+    flex: none;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .movie-title {
+    font-size: 36px;
+  }
+  
+  .movie-meta {
+    gap: 15px;
+  }
+  
+  .movie-meta span {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-details-content {
+    padding: 70px 20px 20px;
+    gap: 25px;
+  }
+  
+  .movie-poster-section {
+    max-width: 300px;
+  }
+  
+  .movie-title {
+    font-size: 28px;
+  }
+  
+  .movie-meta {
+    gap: 10px;
+  }
+  
+  .movie-meta span {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .imdb-rating {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  .imdb-votes {
+    font-size: 12px;
+  }
+  
+  .movie-genres {
+    font-size: 16px;
+  }
+  
+  .movie-plot h3 {
+    font-size: 20px;
+  }
+  
+  .movie-plot p {
+    font-size: 14px;
+  }
+  
+  .cast-item {
+    font-size: 14px;
+  }
+  
+  .cast-item strong {
+    min-width: 80px;
+  }
+  
+  .info-item {
+    font-size: 13px;
+  }
+  
+  .info-item strong {
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-details-content {
+    padding: 60px 15px 15px;
+    gap: 20px;
+  }
+  
+  .movie-poster-section {
+    max-width: 250px;
+  }
+  
+  .movie-title {
+    font-size: 24px;
+  }
+  
+  .movie-meta {
+    gap: 8px;
+  }
+  
+  .movie-meta span {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+  
+  .imdb-rating {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .imdb-votes {
+    font-size: 11px;
+  }
+  
+  .movie-genres {
+    font-size: 14px;
+  }
+  
+  .movie-plot h3 {
+    font-size: 18px;
+  }
+  
+  .movie-plot p {
+    font-size: 13px;
+  }
+  
+  .cast-item {
+    font-size: 13px;
+  }
+  
+  .cast-item strong {
+    min-width: 70px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .info-item {
+    font-size: 12px;
+  }
+  
+  .info-item strong {
+    min-width: 70px;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
