@@ -7,7 +7,11 @@ const api = axios.create({
 });
 
 // API key from environment variables
-const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY || 'thewdb';
+
+// Debug: Log the API key (remove in production)
+console.log('API Key loaded:', API_KEY ? 'Yes' : 'No');
+console.log('API Key value:', API_KEY);
 
 /**
  * Search movies by title
